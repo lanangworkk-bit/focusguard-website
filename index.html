@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FocusGuard - Blokir Distraksi, Tetap Fokus</title>
+  <meta name="description" content="FocusGuard memblokir situs distraksi seperti YouTube, Facebook, dan Twitter selama sesi fokus. Mulai dari Rp46.000/bulan.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+
+    header { padding: 40px 24px 0; text-align: center; }
+    nav { display: flex; justify-content: space-between; align-items: center; max-width: 960px; margin: 0 auto; padding: 16px 24px; }
+    .logo { font-weight: 700; font-size: 20px; color: #fff; }
+    .logo span { color: #e94560; }
+    .nav-links a { color: #94a3b8; text-decoration: none; margin-left: 24px; font-size: 14px; }
+    .nav-links a:hover { color: #fff; }
+
+    h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; color: #fff; }
+    .hero-sub { font-size: clamp(16px, 2vw, 20px); color: #94a3b8; max-width: 640px; margin: 0 auto 32px; }
+    .badge { display: inline-block; background: rgba(233,69,96,0.15); color: #fca5a5; border: 1px solid #e94560; padding: 4px 14px; border-radius: 999px; font-size: 13px; margin-bottom: 20px; }
+
+    .btn { display: inline-block; background: #e94560; color: #fff; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 16px; }
+    .btn:hover { background: #d13352; }
+    .btn-secondary { background: transparent; border: 1px solid #334155; color: #cbd5e1; }
+    .btn-secondary:hover { border-color: #e94560; color: #fff; }
+    .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    .mock { margin: 48px auto; max-width: 460px; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+    .mock .timer { font-size: 40px; font-weight: 700; text-align: center; color: #fff; margin-bottom: 16px; }
+    .mock-bars { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; }
+    .mock-bars div { width: 12px; background: #e94560; border-radius: 4px; }
+    .mock-btn { background: #0f3460; color: #fff; text-align: center; padding: 10px; border-radius: 8px; font-weight: 600; cursor: not-allowed; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin: 40px 0; }
+    .feature { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 24px; }
+    .feature h3 { color: #fff; font-size: 18px; margin-bottom: 8px; }
+    .feature p { color: #94a3b8; font-size: 14px; }
+
+    .howto { background: #111c2e; border-radius: 14px; padding: 32px; margin: 40px 0; }
+    .howto h2 { color: #fff; margin-bottom: 16px; }
+    .howto ol { margin-left: 20px; color: #cbd5e1; }
+
+    .pricing { text-align: center; margin: 48px 0; }
+    .price-box { display: inline-block; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 32px; }
+    .price-free { color: #94a3b8; font-size: 16px; margin-bottom: 8px; }
+    .price-amount { font-size: 44px; font-weight: 800; color: #fff; }
+    .price-pro { color: #e94560; font-size: 14px; margin: 4px 0 16px; }
+    .price-list { list-style: none; color: #cbd5e1; font-size: 14px; margin-bottom: 24px; }
+    .price-list li { padding: 4px 0; }
+    .price-list li::before { content: "✓ "; color: #34d399; }
+
+    footer { text-align: center; padding: 40px 24px; color: #475569; font-size: 13px; border-top: 1px solid #1e293b; margin-top: 40px; }
+    section h2 { font-size: 28px; font-weight: 700; color: #fff; text-align: center; margin: 40px 0 16px; }
+    .sub { text-align: center; color: #94a3b8; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Focus<span>Guard</span></div>
+    <div class="nav-links">
+      <a href="#how">Cara Kerja</a>
+      <a href="#pricing">Harga</a>
+      <a href="https://fokusguard.lemonsqueezy.com/checkout/buy/baa759d1-6e7e-49b8-918f-6f42e35cf73b">Beli Pro</a>
+    </div>
+  </nav>
+
+  <header class="container">
+    <div class="badge">Chrome Extension · Freemium</div>
+    <h1>Blokir Distraksi.<br>Tetap Fokus. Selesaikan Pekerjaan.</h1>
+    <p class="hero-sub">
+      FocusGuard memblokir situs seperti YouTube, Facebook, dan Twitter selama sesi fokus
+      berjalan — pemblokiran level jaringan, bukan sekadar pengingat.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="https://fokusguard.lemonsqueezy.com/checkout/buy/baa759d1-6e7e-49b8-918f-6f42e35cf73b">Coba Pro - Rp46rb/bln</a>
+      <a class="btn btn-secondary" href="#how">Lihat Cara Kerja</a>
+    </div>
+
+    <div class="mock">
+      <div class="timer">25:00</div>
+      <div class="mock-bars">
+        <div style="height:30px"></div>
+        <div style="height:55px"></div>
+        <div style="height:40px"></div>
+        <div style="height:70px"></div>
+        <div style="height:45px"></div>
+        <div style="height:60px"></div>
+      </div>
+      <div class="mock-btn">Situs diblokir saat fokus: youtube.com, facebook.com</div>
+    </div>
+  </header>
+
+  <section class="container" id="how">
+    <h2>Bagaimana cara kerjanya?</h2>
+    <p class="sub">3 langkah sederhana. Nol konfigurasi rumit.</p>
+    <div class="howto">
+      <ol>
+        <li><strong>Tekan Start</strong> — sesi fokus 25 menit dimulai.</li>
+        <li><strong>Situs diblokir otomatis</strong> — situs dalam daftar blokirmu (YouTube, Facebook, dll) tidak bisa dibuka.</li>
+        <li><strong>Fokus selesai</strong> — akses kembali normal. Statistik fokusmu tercatat.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Kenapa FocusGuard?</h2>
+    <p class="sub">Bukan sekadar timer — ini tembok sungguhan.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>🛡️ Block Level Jaringan</h3>
+        <p>Situs terblokir total saat sesi fokus — tidak bisa dibuka lewat tab baru, link, atau address bar.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Privasi Terjaga</h3>
+        <p>Semua data tersimpan lokal di perangkatmu. Tanpa akun, tanpa pelacakan, tanpa server.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Statistik Fokus</h3>
+        <p>Pantau berapa menit kamu fokus per hari dan per minggu untuk membangun kebiasaan.</p>
+      </div>
+      <div class="feature">
+        <h3>🚀 Satu Klik</h3>
+        <p>Timer + blocker aktif dalam satu klik. Tidak perlu pengaturan ribet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="pricing">
+    <h2>Harga yang sederhana</h2>
+    <p class="sub">Mulai gratis. Upgrade hanya saat kamu butuh lebih banyak.</p>
+    <div class="pricing">
+      <div class="price-box">
+        <div class="price-free">Free</div>
+        <div class="price-amount">Rp0</div>
+        <div class="price-pro">selamanya</div>
+        <ul class="price-list">
+          <li>Timer fokus 25 menit</li>
+          <li>Block hingga 3 situs</li>
+          <li>Statistik 7 hari terakhir</li>
+        </ul>
+        <a class="btn btn-secondary" href="#">Download dari Chrome Store</a>
+      </div>
+      <div style="display:inline-block;width:24px"></div>
+      <div class="price-box" style="border-color:#e94560">
+        <div class="price-free">Pro</div>
+        <div class="price-amount">Rp46rb</div>
+        <div class="price-pro">per bulan</div>
+        <ul class="price-list">
+          <li>Block situs tak terbatas</li>
+          <li>Tanpa branding</li>
+          <li>Statistik selamanya</li>
+          <li>Dukungan prioritas</li>
+        </ul>
+        <a class="btn" href="https://fokusguard.lemonsqueezy.com/checkout/buy/baa759d1-6e7e-49b8-918f-6f42e35cf73b">Beli Pro Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="text-align:center;padding-bottom:20px">
+    <h2>Siap fokus?</h2>
+    <div class="btn-row">
+      <a class="btn" href="https://fokusguard.lemonsqueezy.com/checkout/buy/baa759d1-6e7e-49b8-918f-6f42e35cf73b">Mulai dengan Pro - Rp46rb/bln</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>FocusGuard © 2026 · Privasi: tidak ada data yang dikumpulkan · <a href="privacy.html" style="color:#64748b">Kebijakan Privasi</a></p>
+  </footer>
+
+</body>
+</html>
