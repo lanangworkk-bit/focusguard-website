@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FocusGuard - Instagram Showcase</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0f172a;
+      width: 1080px;
+      height: 1350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px;
+      color: #fff;
+    }
+    .logo { font-size: 72px; font-weight: 800; margin-bottom: 8px; }
+    .logo span { color: #e94560; }
+    .tag { display: inline-block; background: rgba(233,69,96,0.15); border: 1px solid #e94560; color: #fca5a5; padding: 8px 28px; border-radius: 999px; font-size: 24px; margin-bottom: 48px; }
+    h1 { font-size: 56px; font-weight: 800; line-height: 1.2; margin-bottom: 36px; }
+    .features { width: 100%; margin: 40px 0; }
+    .feature { display: flex; align-items: center; gap: 24px; background: #1e293b; border: 1px solid #334155; border-radius: 20px; padding: 28px 36px; margin-bottom: 20px; text-align: left; }
+    .feature .icon { font-size: 44px; flex-shrink: 0; }
+    .feature .text { font-size: 28px; }
+    .feature .text small { display: block; color: #94a3b8; font-size: 22px; margin-top: 4px; }
+    .price { display: flex; gap: 24px; margin-top: 36px; width: 100%; }
+    .price-box { flex: 1; background: #1e293b; border: 2px solid #334155; border-radius: 20px; padding: 32px; }
+    .price-box.pro { border-color: #e94560; }
+    .price-label { font-size: 22px; color: #94a3b8; }
+    .price-amount { font-size: 52px; font-weight: 800; margin: 8px 0; }
+    .price-sub { font-size: 20px; color: #94a3b8; }
+    .badge-pro { display: inline-block; background: #e94560; color: #fff; font-size: 18px; padding: 4px 16px; border-radius: 999px; margin-bottom: 12px; }
+    .cta { margin-top: 48px; font-size: 26px; color: #cbd5e1; background: #e94560; color: #fff; padding: 24px 56px; border-radius: 16px; font-weight: 700; }
+    .foot { margin-top: 32px; font-size: 20px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <div class="logo">Focus<span>Guard</span> 🛡️</div>
+  <div class="tag">Chrome Extension · Freemium</div>
+
+  <h1>Blokir distraksi.<br>Tetap fokus, tanpa kemauan.</h1>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">🚫</div>
+      <div class="text"><strong>YouTube & Facebook diblokir</strong><small>Blokir level jaringan selama timer fokus jalan</small></div>
+    </div>
+    <div class="feature">
+      <div class="icon">⏱️</div>
+      <div class="text"><strong>Timer fokus 25 menit</strong><small>Sekali klik, langsung mulai sesi fokus</small></div>
+    </div>
+    <div class="feature">
+      <div class="icon">📊</div>
+      <div class="text"><strong>Statistik fokus harian</strong><small>Pantau perkembangan setiap hari</small></div>
+    </div>
+  </div>
+
+  <div class="price">
+    <div class="price-box">
+      <div class="price-label">Free</div>
+      <div class="price-amount">Rp0</div>
+      <div class="price-sub">3 situs blokir</div>
+    </div>
+    <div class="price-box pro">
+      <div class="badge-pro">PRO</div>
+      <div class="price-label">Pro</div>
+      <div class="price-amount">Rp46rb</div>
+      <div class="price-sub">per bulan · unlimited</div>
+    </div>
+  </div>
+
+  <div class="cta">🔗 Link di bio</div>
+  <div class="foot">Privacy: data lokal, tanpa akun, tanpa tracking</div>
+</body>
+</html>
